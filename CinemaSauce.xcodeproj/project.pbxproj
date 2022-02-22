@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		FCF4870C27A37EAE00798167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4870B27A37EAE00798167 /* AppDelegate.swift */; };
 		FCF4870E27A37EAE00798167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4870D27A37EAE00798167 /* SceneDelegate.swift */; };
-		FCF4871027A37EAE00798167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4870F27A37EAE00798167 /* ViewController.swift */; };
+		FCF4871027A37EAE00798167 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4870F27A37EAE00798167 /* MoviesViewController.swift */; };
 		FCF4871327A37EAE00798167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF4871127A37EAE00798167 /* Main.storyboard */; };
 		FCF4871527A37ED600798167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF4871427A37ED600798167 /* Assets.xcassets */; };
 		FCF4871827A37ED600798167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF4871627A37ED600798167 /* LaunchScreen.storyboard */; };
 		FCF4872327A37EDD00798167 /* CinemaSauceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4872227A37EDD00798167 /* CinemaSauceTests.swift */; };
 		FCF4872D27A37EDE00798167 /* CinemaSauceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4872C27A37EDE00798167 /* CinemaSauceUITests.swift */; };
 		FCF4872F27A37EDE00798167 /* CinemaSauceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4872E27A37EDE00798167 /* CinemaSauceUITestsLaunchTests.swift */; };
+		FCF4874027A3C5CE00798167 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4873F27A3C5CE00798167 /* MovieCell.swift */; };
+		FCF4874327A759CE00798167 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = FCF4874227A759CE00798167 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		FCF4870827A37EAE00798167 /* CinemaSauce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaSauce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF4870B27A37EAE00798167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF4870D27A37EAE00798167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCF4870F27A37EAE00798167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCF4870F27A37EAE00798167 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		FCF4871227A37EAE00798167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCF4871427A37ED600798167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF4871727A37ED600798167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		FCF4872827A37EDE00798167 /* CinemaSauceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaSauceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF4872C27A37EDE00798167 /* CinemaSauceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSauceUITests.swift; sourceTree = "<group>"; };
 		FCF4872E27A37EDE00798167 /* CinemaSauceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaSauceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCF4873F27A3C5CE00798167 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF4874327A759CE00798167 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +105,12 @@
 			children = (
 				FCF4870B27A37EAE00798167 /* AppDelegate.swift */,
 				FCF4870D27A37EAE00798167 /* SceneDelegate.swift */,
-				FCF4870F27A37EAE00798167 /* ViewController.swift */,
+				FCF4870F27A37EAE00798167 /* MoviesViewController.swift */,
 				FCF4871127A37EAE00798167 /* Main.storyboard */,
 				FCF4871427A37ED600798167 /* Assets.xcassets */,
 				FCF4871627A37ED600798167 /* LaunchScreen.storyboard */,
 				FCF4871927A37ED600798167 /* Info.plist */,
+				FCF4873F27A3C5CE00798167 /* MovieCell.swift */,
 			);
 			path = CinemaSauce;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = CinemaSauce;
+			packageProductDependencies = (
+				FCF4874227A759CE00798167 /* AlamofireImage */,
+			);
 			productName = CinemaSauce;
 			productReference = FCF4870827A37EAE00798167 /* CinemaSauce.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = FCF486FF27A37EAE00798167;
+			packageReferences = (
+				FCF4874127A759CE00798167 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = FCF4870927A37EAE00798167 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF4871027A37EAE00798167 /* ViewController.swift in Sources */,
+				FCF4871027A37EAE00798167 /* MoviesViewController.swift in Sources */,
 				FCF4870C27A37EAE00798167 /* AppDelegate.swift in Sources */,
+				FCF4874027A3C5CE00798167 /* MovieCell.swift in Sources */,
 				FCF4870E27A37EAE00798167 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCF4874127A759CE00798167 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCF4874227A759CE00798167 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCF4874127A759CE00798167 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCF4870027A37EAE00798167 /* Project object */;
 }
